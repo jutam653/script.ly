@@ -36,13 +36,24 @@ The user also has the ability to practice their uploaded script. Script.ly parse
 ![practice](https://media.giphy.com/media/hLkBrqv8isC7cy1lsT/giphy.gif)
 
 ## Technical Challenges
-For this project, we had to learn how to extract data from upload files, integrate with text-to-speech and speech-to-text APIs, and learn how to use the IBM Watson API.
+I thoroughly enjoyed working on this project and tackling problems with my fellow software engineers. Personally, I was responsible with implementing speech recognition functionality for Script.ly. One of the main challenges that I faced was utilizing client size rendering within Next.js, which uses server side rendering. On initial render of the home page, I discovered that Next.js does not have access to client side objects such as window, which the Speech Recognition Web API needs to function. In order to get around this, I used the React hooks useRef and useEffect. With useEffect, I was able to initialize the speech recognition constructor and assigning it to the current property of the useRef object.
 
-<ul>
-  <li>Loading and extracting data from uploaded files</li>
-  <li>Integrating text-to-speech and speech-to-text APIs</li>
-  <li>Utilizing IBM Watson for Natural Language Processing</li>
-</ul>
+```javascript
+export default function RecordButton() {
+  const recognition = useRef(null);
+  const [record, setRecord] = useState(false);
+
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+    recognition.current = new SpeechRecognition();
+    recognition.current.continuous = true;
+    recognition.current.lang = 'en-US';
+  }, [])
+}
+```
+
+## Future Implementations
+Some future implementations that we would like to incorporate include allowing users to login and access their previously uploaded scripts and analysis associated with it. In order to do so, we plan to use technologies such as Firebase and Firestore for authentication and database storage, respectively. In addition, we would also like to implement a social media aspect to Script.ly, such as allwoing users to share their scripts and emotional analysis with others.
 
 ## Contributors
 <li>Minggui Yactayo - https://github.com/9gramsof</li>
