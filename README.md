@@ -53,7 +53,7 @@ export default function RecordButton() {
 ```
 
 ## Future Implementations
-Some future implementations that we would like to incorporate include allowing users to login and access their previously uploaded scripts and analysis associated with it. In order to do so, we plan to use technologies such as Firebase and Firestore for authentication and database storage, respectively. In addition, we would also like to implement a social media aspect to Script.ly, such as allwoing users to share their scripts and emotional analysis with others.
+Some future implementations that we would like to incorporate include allowing users to login and access their previously uploaded scripts and analysis associated with it. In order to do so, we plan to use technologies such as Firebase and Firestore for authentication and database storage, respectively. In addition, we would also like to implement a social media aspect to Script.ly, such as allowing users to share their scripts and emotional analysis with others.
 
 ## Contributors
 <li>Minggui Yactayo - https://github.com/9gramsof</li>
