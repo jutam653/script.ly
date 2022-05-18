@@ -31,7 +31,7 @@ Another main feature of Script.ly is to allow users to record their speech by sp
 ![record](https://media.giphy.com/media/ME8rhO34WkvV6zpG9n/giphy.gif)
 
 ### Practice
-The user also has the ability to practice their uploaded script. Script.ly parses the text and allows users the select a role that they would want to play. Script.ly will then use text-to-speech generated with the **Speech Synthesis API** to read the lines either by clicking the Next Line Button or the line itself in the script.
+The user also has the ability to practice their uploaded script. Script.ly parses the text and allows users to select a role that they would want to play. Script.ly will then use text-to-speech generated with the **Speech Synthesis API** to read the lines either by clicking the Next Line Button or the line itself in the script.
 
 ![practice](https://media.giphy.com/media/hLkBrqv8isC7cy1lsT/giphy.gif)
 
